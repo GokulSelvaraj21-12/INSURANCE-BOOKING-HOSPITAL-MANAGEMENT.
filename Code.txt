@@ -1,0 +1,53 @@
+create table Insurance_ABC(
+customer_id number(20) primary key,
+First_name varchar(20) Not Null,
+last_name varchar(20) Not Null,
+Gender varchar(10) Not Null,
+Mobile_No Number(10) check(length(mobile_No)=10),
+Email_id varchar(20) Unique,
+Location varchar(20) Not Null,
+Beneficiary varchar(20) Not Null,
+ID_proof varchar(20) Not Null,
+Payment_mode varchar(10) Not Null);
+
+insert into Insurance_ABC values(2001,'Din','esh','M',6383493676,'dinesh@gmail.com','Namakkal','Suwathika','Aadhar','Cash');
+
+insert into Insurance_ABC values(2002,'Gow','tham','M',9632587410,'gowtham@gmail.com','Palani','Sasetha','Aadhar','Cash');
+
+insert into Insurance_ABC values(2003,'Nagen','dran','M',8956742013,'nagendran@gmail.com','Karur','Chiradeep','License','Creditcard');
+
+insert into Insurance_ABC values(2004,'Aks','hya','F',7845961023,'akshya@gmail.com','Trichy','Achu','Aadhar','Cash');
+
+insert into Insurance_ABC values(2005,'Chira','deep','M',6362684017,'chiradeep@gmail.com','Erode','Harasa','Passport','Cash');
+
+insert into Insurance_ABC values(2006,'Suwa','thika','F',7984539210,'suwathika@gmail.com','Namakkal','Dinesh','Aadhar','UPI');
+
+insert into Insurance_ABC values(2007,'Sam','raj','M',8574201396,'samraj@gmail.com','Chennai','Madhura','Aadhar','UPI');
+
+insert into Insurance_ABC values(2008,'Bharathi','Priya','F',6352417809,'bharathi@gmail.com','Karur','Raj','License','Debitcard');
+
+insert into Insurance_ABC values(2009,'Sur','esh','M',8574102396,'suresh@gmail.com','Madurai','Priya','Aadhar','UPI');
+
+insert into Insurance_ABC values(2010,'Gok','ul','M',8574962013,'gokul@gmail.com','Velur','Indhu','Pancard','Cash');
+
+insert into Insurance_ABC values(2011,'Jaya','ram','M',7485109236,'jayaram@gmail.com','Chennai','Madhu','Aadhar','UPI');
+
+insert into Insurance_ABC values(2012,'Sri','dhar','M',8520147396,'sridhar@gmail.com','Pollachi','Dhivya','Aadhar','UPI');
+
+insert into Insurance_ABC values(2013,'Mad','esh','M',9695487126,'madesh@gmail.com','Karur','Latha','Passport','UPI');
+
+insert into Insurance_ABC values(2014,'Pri','ya','F',8520074116,'priya@gmail.com','Erode','Vijay','Pancard','UPI');
+
+insert into Insurance_ABC values(2015,'Ba','la','M',8523374960,'bala@gmail.com','karur','Janani','Aadhar','Debitcard');
+
+insert into Insurance_ABC values(2016,'Jan','ani','F',9685142730,'janani@gmail.com','Madurai','Gowtham','Aadhar','UPI');
+
+insert into Insurance_ABC values(2017,'Supri','tha','F',7475896001,'supritha@gmail.com','Namakkal','Vishnu','Aadhar','UPI');
+
+insert into Insurance_ABC values(2018,'Dhi','vya','F',9715383576,'dhivya@gmail.com','Thiruchengodu','Senthil','Aadhar','cash');
+
+insert into Insurance_ABC values(2019,'Sara','naya','F',9495822330,'saranaya@gmail.com','Chennai','Rekha','License','UPI');
+
+insert into Insurance_ABC values(2020,'Vij','ay','M',8754961023,'vijay@gmail.com','Chennai','Priya','Aadhar','UPI');
+
+select*from Insurance_ABC;
